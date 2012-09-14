@@ -1,0 +1,20 @@
+{
+	"author": "Uriel Hernandez",
+	"name": "fb_app_example",
+	"description" : "Application for test facebook log-in",
+	"version" : "0.0.0",
+	"repository":{
+		"url":""
+	},
+	"engines":{
+		"node" : "~0.8.9"
+	},
+	"dependencies":{
+		"coffee-script" : "*",
+		"express" : "*",
+		"eco" : "*",
+		"facebook-js" : "*",
+		"consolidate" : "*"
+	},
+	"devDependencies":{}
+}

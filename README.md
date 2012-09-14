@@ -1,0 +1,1 @@
+Ésta aplicación es educativa solamente.
