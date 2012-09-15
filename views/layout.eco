@@ -1,9 +1,0 @@
-<!doctype html>
-<html>
-<head>
-	<title>Facebook App</title>
-</head>
-<body>
-	<%- @body %>
-</body>
-</html>

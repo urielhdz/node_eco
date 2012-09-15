@@ -1,17 +1,12 @@
-require "coffee-script"
+require 'coffee-script'
+express = require 'express', http = require 'http'
 
-express = require 'express'
-engines = require 'consolidate'
-http = require "http"
-server = http.createServer app
 app = express()
 
-app.engine 'eco', engines.eco
-app.configure ->
-	app.set 'views', __dirname + "/views"
-	app.use express.static(__dirname + "/public")
-app.get "/", (res,req)->
-	res.redirect 'http://facebook.com'
+server = http.createServer app
 
-server.listen 8000, ->
-	console.log "Server iniciado"
+app.get "/", (req,res)->
+	res.send 'Bienvenido a coffee-script'
+	console.log "Peticion solicitada"
+server.listen 8080, ->
+	console.log "Servidor se ha iniciado"
